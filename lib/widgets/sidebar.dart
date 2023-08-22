@@ -11,7 +11,7 @@ class SideBar extends StatelessWidget {
     return Container(
       width: 250, // Set the width of the sidebar as needed
       color: Colors.blue,
-      child: Avatar(),
+      child: Column(children: [Avatar()]),
     );
   }
 }

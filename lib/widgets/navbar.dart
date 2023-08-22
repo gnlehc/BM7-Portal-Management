@@ -5,7 +5,6 @@ import 'package:google_fonts/google_fonts.dart';
 
 class Navbar extends StatelessWidget {
   const Navbar({Key? key}) : super(key: key);
-
   @override
   Widget build(BuildContext context) {
     return AppBar(
@@ -106,8 +105,6 @@ class Navbar extends StatelessWidget {
           )
         ],
       ),
-      actions: const [Home()],
-      
     );
   }
 }

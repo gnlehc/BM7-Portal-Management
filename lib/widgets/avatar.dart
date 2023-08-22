@@ -6,33 +6,51 @@ class Avatar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Card(
-        child: Container(
-      width: 80,
-      padding: const EdgeInsets.all(20),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: <Widget>[
-          const Text("Student - 2602057652"),
-          const SizedBox(height: 5),
-          const Text("Chelsea Ng"),
-          const SizedBox(height: 20),
-          const Text("Undergraduate"),
-          const SizedBox(height: 5),
-          const Text("BINUS UNIVERSITY"),
-          const SizedBox(height: 20),
-          TextButton(
-            onPressed: () {},
-            style: ButtonStyle(
-              backgroundColor: MaterialStateProperty.all<Color>(Colors.amber),
-            ),
-            child: const Text(
-              "CHANGE ROLE",
-              style: TextStyle(color: Colors.white),
-            ),
-          ),
-        ],
-      ),
-    ));
+    return Padding(
+        padding: EdgeInsetsDirectional.only(top: 20),
+        child: Card(
+            child: Container(
+                width: 220,
+                height: 180,
+                padding: const EdgeInsets.all(20),
+                child: Center(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: <Widget>[
+                      const Text("Chelsea Ng - 2602057652",
+                          style: TextStyle(
+                              fontWeight: FontWeight.bold, fontSize: 14)),
+                      const SizedBox(height: 5),
+                      const Text(
+                        "Computer Science",
+                        style: TextStyle(
+                          fontSize: 10,
+                        ),
+                      ),
+                      const SizedBox(height: 20),
+                      const Text(
+                        "Undergraduate",
+                        style: TextStyle(fontSize: 12),
+                      ),
+                      const SizedBox(height: 5),
+                      const Text(
+                        "BINUS UNIVERSITY",
+                        style: TextStyle(fontSize: 12),
+                      ),
+                      const SizedBox(height: 20),
+                      TextButton(
+                        onPressed: () {},
+                        style: ButtonStyle(
+                          backgroundColor: MaterialStateProperty.all<Color>(
+                              const Color(0xFFF18700)),
+                        ),
+                        child: const Text(
+                          "CHANGE ROLE",
+                          style: TextStyle(color: Colors.white),
+                        ),
+                      ),
+                    ],
+                  ),
+                ))));
   }
 }
